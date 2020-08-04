@@ -21,6 +21,8 @@ GLUON_FEATURES := \
 	web-private-wifi \
 	web-wizard
 
+GLUON_FEATURES_standard := wireless-encryption-wpa3
+
 ##	GLUON_SITE_PACKAGES
 #		Specify additional Gluon/OpenWrt packages to include here;
 #		A minus sign may be prepended to remove a packages from the
@@ -37,6 +39,9 @@ GLUON_SITE_PACKAGES := \
 	ecdsautils \
 	respondd-module-airtime \
 	ffh-cli-scripts
+
+GLUON_SITE_PACKAGES_standard := \
+	ffda-gluon-web-usb-wan-hotplug
 
 ##	GLUON_MULTIDOMAIN
 #		Build gluon with multidomain support.
