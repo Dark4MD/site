@@ -41,7 +41,7 @@ GLUON_SITE_PACKAGES := \
 	ffh-cli-scripts
 
 GLUON_SITE_PACKAGES_standard := \
-	ffda-gluon-web-usb-wan-hotplug
+	ffka-gluon-web-usb-wan-hotplug
 
 ##	GLUON_MULTIDOMAIN
 #		Build gluon with multidomain support.
