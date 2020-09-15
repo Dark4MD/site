@@ -40,8 +40,12 @@ GLUON_SITE_PACKAGES := \
 	respondd-module-airtime \
 	ffh-cli-scripts
 
+
+ifeq ($(GLUON_TARGET),x86-geode)
+else
 GLUON_SITE_PACKAGES_standard := \
 	ffka-gluon-web-usb-wan-hotplug
+endif
 
 ##	GLUON_MULTIDOMAIN
 #		Build gluon with multidomain support.
