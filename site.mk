@@ -41,8 +41,7 @@ GLUON_SITE_PACKAGES := \
 	ffh-cli-scripts
 
 
-ifeq ($(GLUON_TARGET),x86-geode)
-else
+ifneq ($(GLUON_TARGET),$(filter $(GLUON_TARGET),x86-geode x86-legacy))
 GLUON_SITE_PACKAGES_standard := \
 	ffka-gluon-web-usb-wan-hotplug
 endif
