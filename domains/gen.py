@@ -9,21 +9,23 @@ import json
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
 h = "Hannover: "
+r = "Region: "
+u = "Umland: "
 domains = {
-    0: { "names": { "legacy": "Legacy" } },
-    10: { "names": { "hameln": "Hameln", "alfeld": "Alfeld" }, },
-    11: { "names": { "lenthe": "Lenthe" } },
-    12: { "names": { "steinhude": "Steinhude" } },
-    13: { "names": { "springe": "Springe", "obernkirchen": "Obernkirchen" } },
+    0: { "names": { "legacy": "Legacy" }, "hide": True },
+    10: { "names": { "hameln": u+"Hameln", "alfeld": u+"Alfeld" }, },
+    11: { "names": { "lenthe": r+"Lenthe" } },
+    12: { "names": { "steinhude": r+"Steinhude" } },
+    13: { "names": { "springe": r+"Springe", "obernkirchen": u+"Obernkirchen" } },
     14: { "names": { "nordstadt": h+'Nordstadt' } },
-    15: { "names": { "wunstorf": "Wunstorf", "neustadt": "Neustadt", "nienburg": "Nienburg/Weser" } },
+    15: { "names": { "wunstorf": r+"Wunstorf", "neustadt": r+"Neustadt", "nienburg": u+"Nienburg/Weser" } },
     16: { "names": {
         "wettbergen": h+'Wettbergen',
         "oberricklingen": h+"Oberricklingen",
         "muehlenberg": h+"Mühlenberg",
         "bornum": h+"Bornum",
         "ricklingen": h+"Ricklingen",
-        "barsinghausen": "Barsinghausen",
+        "barsinghausen": r+"Barsinghausen",
         "davenstedt": h+"Davenstedt",
         "ahlem": h+"Ahlem",
         "badenstedt": h+"Badenstedt"
@@ -36,14 +38,13 @@ domains = {
         "calenbergerneustadt": h+'Calenberger Neustadt'
     } },
     18: { "names": {
-        "garbsen": 'Garbsen',
-        "langenhagen": 'Langenhagen',
-        "seelze": 'Seelze',
-        "isernhagen": 'Isernhagen',
-        "burgdorf": 'Burgdorf',
-        "burgwedel": 'Burgwedel',
-        "uetze": 'Uetze',
-        "langenhagen": 'Langenhagen',
+        "garbsen": r+'Garbsen',
+        "langenhagen": r+'Langenhagen',
+        "seelze": r+'Seelze',
+        "isernhagen": r+'Isernhagen',
+        "burgdorf": r+'Burgdorf',
+        "burgwedel": r+'Burgwedel',
+        "uetze": r+'Uetze',
         "stoecken": h+'Stöcken',
         "marienwerder": h+'Marienwerder',
         "ledeburg": h+'Ledeburg',
@@ -55,7 +56,7 @@ domains = {
         "leinhausen": h+'Leinhausen',
         "vinnhorst": h+'Vinnhorst',
         "brinkhafen": h+'Brinkhafen',
-        "schwarmstedt": 'Schwarmstedt'
+        "schwarmstedt": u+'Schwarmstedt'
     } },
     19: { "names": {
         "mitte": h+'Mitte',
@@ -74,11 +75,11 @@ domains = {
         "kirchrode": h+'Kirchrode',
         "anderten": h+'Anderten',
         "wuelferode": h+'Wülferode',
-        "laatzen": 'Laatzen',
-        "sehnde": 'Sehnde',
-        "sarstedt": 'Sarstedt',
-        "pattensen": 'Pattensen',
-        "hildesheim": 'Hildesheim'
+        "laatzen": r+'Laatzen',
+        "sehnde": r+'Sehnde',
+        "sarstedt": r+'Sarstedt',
+        "pattensen": r+'Pattensen',
+        "hildesheim": u+'Hildesheim'
     } },
     21: { "names": {
         "heideviertel": h+'Heideviertel',
@@ -92,16 +93,16 @@ domains = {
         "vahrenheide": h+'Vahrenheide',
         "list": h+'List',
         "oststadt": h+'Oststadt',
-        "lehrte": 'Lehrte',
+        "lehrte": r+'Lehrte',
         "isernhagensued": h+'Isernhagen Süd',
     } },
     22: { "names": {
-        "umland": "Umland",
-        "wennigsen": "Wennigsen",
-        "gehrden": "Gehrden",
-        "hemmingen": "Hemmingen",
-        "ronnenberg": "Ronnenberg",
-        "peinewest": "Peine-West"
+        "umland": u+"Andere",
+        "wennigsen": r+"Wennigsen",
+        "gehrden": r+"Gehrden",
+        "hemmingen": r+"Hemmingen",
+        "ronnenberg": r+"Ronnenberg",
+        "peinewest": r+"Peine-West"
 	  } },
     23: { "names": { "special_port": "Special Port" }, "hide": True, "port": 500 },
     99: { "names": { "leetfeld": "Leetfeld (1337, invalid)"}, "hide": True }
