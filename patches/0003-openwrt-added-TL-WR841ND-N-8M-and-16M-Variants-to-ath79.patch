@@ -682,7 +682,7 @@ index 00000000..e9019b40
 ++  DEVICE_MODEL := TL-WR841N/ND Mod (8M)
 ++  DEVICE_VARIANT := v8
 ++  TPLINK_HWID := 0x08410808
-++  SUPPORTED_DEVICES += tl-wr841n-v8-8m
+++  SUPPORTED_DEVICES += tl-wr841n-v8 tl-wr841n-v8-8m
 ++endef
 ++TARGET_DEVICES += tplink_tl-wr841-v8-8m
 ++
@@ -692,7 +692,7 @@ index 00000000..e9019b40
 ++  DEVICE_MODEL := TL-WR841N/ND Mod (16M)
 ++  DEVICE_VARIANT := v8
 ++  TPLINK_HWID := 0x08411608
-++  SUPPORTED_DEVICES += tl-wr841n-v8-16m
+++  SUPPORTED_DEVICES += tl-wr841n-v8 tl-wr841n-v8-16m
 ++endef
 ++TARGET_DEVICES += tplink_tl-wr841-v8-16m
 ++
@@ -702,7 +702,7 @@ index 00000000..e9019b40
 ++  DEVICE_MODEL := TL-WR841N/ND Mod (8M)
 ++  DEVICE_VARIANT := v9
 ++  TPLINK_HWID := 0x08410809
-++  SUPPORTED_DEVICES += tl-wr841n-v9-8m
+++  SUPPORTED_DEVICES += tl-wr841n-v9 tl-wr841n-v9-8m
 ++endef
 ++TARGET_DEVICES += tplink_tl-wr841-v9-8m
 ++
@@ -712,7 +712,7 @@ index 00000000..e9019b40
 ++  DEVICE_MODEL := TL-WR841N/ND Mod (16M)
 ++  DEVICE_VARIANT := v9
 ++  TPLINK_HWID := 0x08411609
-++  SUPPORTED_DEVICES += tl-wr841n-v9-16m
+++  SUPPORTED_DEVICES += tl-wr841n-v9 tl-wr841n-v9-16m
 ++endef
 ++TARGET_DEVICES += tplink_tl-wr841-v9-16m
 ++
@@ -722,7 +722,7 @@ index 00000000..e9019b40
 ++  DEVICE_MODEL := TL-WR841N/ND Mod (8M)
 ++  DEVICE_VARIANT := v10
 ++  TPLINK_HWID := 0x08410810
-++  SUPPORTED_DEVICES += tl-wr841n-v9-8m
+++  SUPPORTED_DEVICES += tl-wr841n-v9 tl-wr841n-v9-8m
 ++endef
 ++TARGET_DEVICES += tplink_tl-wr841-v10-8m
 ++
@@ -732,7 +732,7 @@ index 00000000..e9019b40
 ++  DEVICE_MODEL := TL-WR841N/ND Mod (16M)
 ++  DEVICE_VARIANT := v10
 ++  TPLINK_HWID := 0x08411610
-++  SUPPORTED_DEVICES += tl-wr841n-v9-16m
+++  SUPPORTED_DEVICES += tl-wr841n-v9 tl-wr841n-v9-16m
 ++endef
 ++TARGET_DEVICES += tplink_tl-wr841-v10-16m
 ++
@@ -742,7 +742,7 @@ index 00000000..e9019b40
 ++  DEVICE_MODEL := TL-WR841N/ND Mod (8M)
 ++  DEVICE_VARIANT := v11
 ++  TPLINK_HWID := 0x08410811
-++  SUPPORTED_DEVICES += tl-wr841n-v11-8m
+++  SUPPORTED_DEVICES += tl-wr841n-v11 tl-wr841n-v11-8m
 ++  IMAGES += factory-us.bin factory-eu.bin
 ++  IMAGE/factory-us.bin := tplink-v1-image factory -C US
 ++  IMAGE/factory-eu.bin := tplink-v1-image factory -C EU
@@ -755,7 +755,7 @@ index 00000000..e9019b40
 ++  DEVICE_MODEL := TL-WR841N/ND Mod (16M)
 ++  DEVICE_VARIANT := v11
 ++  TPLINK_HWID := 0x08411611
-++  SUPPORTED_DEVICES += tl-wr841n-v11-16m
+++  SUPPORTED_DEVICES += tl-wr841n-v11 tl-wr841n-v11-16m
 ++  IMAGES += factory-us.bin factory-eu.bin
 ++  IMAGE/factory-us.bin := tplink-v1-image factory -C US
 ++  IMAGE/factory-eu.bin := tplink-v1-image factory -C EU
