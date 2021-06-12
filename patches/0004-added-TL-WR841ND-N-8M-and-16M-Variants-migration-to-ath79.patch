@@ -1,6 +1,6 @@
-From e1447264ec38e3c01e8edce40d6918045b72a7a3 Mon Sep 17 00:00:00 2001
+From 965c1dd66ae3dcba8c8522c82e350a0d59ce44f9 Mon Sep 17 00:00:00 2001
 From: Dark4MD <github.web@manu.li>
-Date: Sat, 12 Jun 2021 03:19:40 +0200
+Date: Sat, 12 Jun 2021 04:04:39 +0200
 Subject: [PATCH] added TL-WR841ND/N 8M and 16M Variants migration to ath79
 
 Added TL-WR841ND/N 8M and 16M v9-v11 Variants to ath79-generic (migration).
@@ -9,8 +9,8 @@ V8 Variant is not automatically migrated as of now because of some missing migra
  ...-WR841ND-N-Devices-for-8M-and-16M-Va.patch | 116 +++
  ...841ND-N-8M-and-16M-Variants-to-ath79.patch | 973 ++++++++++++++++++
  targets/ar71xx-generic                        |   8 +
- targets/ath79-generic                         |  32 +
- 4 files changed, 1129 insertions(+)
+ targets/ath79-generic                         |  33 +
+ 4 files changed, 1130 insertions(+)
  create mode 100644 patches/openwrt/0023-added-TP-Link-TL-WR841ND-N-Devices-for-8M-and-16M-Va.patch
  create mode 100644 patches/openwrt/0024-added-TL-WR841ND-N-8M-and-16M-Variants-to-ath79.patch
 
@@ -1116,10 +1116,10 @@ index 00000000..a626355b
 +2.29.2.windows.2
 +
 diff --git a/targets/ar71xx-generic b/targets/ar71xx-generic
-index df7dbd97..f9939017 100644
+index 8a8a5b28..7280ef40 100644
 --- a/targets/ar71xx-generic
 +++ b/targets/ar71xx-generic
-@@ -398,6 +398,14 @@ device('tp-link-re450', 're450-v1', {
+@@ -406,6 +406,14 @@ device('tp-link-re450', 're450-v1', {
  	class = 'tiny', -- Only 6M of usable Firmware space
  })
  
@@ -1135,14 +1135,13 @@ index df7dbd97..f9939017 100644
  -- Ubiquiti
  
 diff --git a/targets/ath79-generic b/targets/ath79-generic
-index 5537a7ea..7217b2ea 100644
+index afc73064..9eec7a1b 100644
 --- a/targets/ath79-generic
 +++ b/targets/ath79-generic
-@@ -97,3 +97,35 @@ device('tp-link-archer-d50-v1', 'tplink_archer-d50-v1', {
- 	factory = false,
- 	broken = true, -- 64M ath9k + ath10k & power LED not working
+@@ -136,6 +136,39 @@ device('tplink_tl-wr810n-v2', 'tplink_tl-wr810n-v2', {
+ 	class = 'tiny', -- 32M ath9k
  })
-+
+ 
 +device('tp-link-tl-wr841n-nd-mod-8m-ath79-v8', 'tplink_tl-wr841-v8-8m-ath79', {
 +        factory = false,
 +})
@@ -1174,7 +1173,11 @@ index 5537a7ea..7217b2ea 100644
 +device('tp-link-tl-wr841n-nd-mod-16m-ath79-v11', 'tplink_tl-wr841-v11-16m-ath79', {
 +        factory = false,
 +})
-\ No newline at end of file
++
++
+ -- Ubiquiti
+ 
+ device('ubnt_unifiac-lite', 'ubnt_unifiac-lite', {
 -- 
 2.29.2.windows.2
 
