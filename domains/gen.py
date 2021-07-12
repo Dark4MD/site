@@ -10,7 +10,7 @@ THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
 h = "Hannover: "
 domains = {
-    0: { "names": { "legacy": "Legacy" } },
+    0: { "names": { "legacy": "Legacy" }, "hide": True },
     10: { "names": { "hameln": "Hameln", "alfeld": "Alfeld" }, },
     11: { "names": { "lenthe": "Lenthe" } },
     12: { "names": { "steinhude": "Steinhude" } },
