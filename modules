@@ -1,7 +1,33 @@
+# This file allows specifying additional repositories to use
+# when building gluon.
+#
+# In most cases, it is not required so don't add it.
+
+##	GLUON_SITE_FEEDS
+#		for each feed name given, add the corresponding PACKAGES_* lines
+#		documented below
 GLUON_SITE_FEEDS='hannover ffho'
-PACKAGES_HANNOVER_REPO=https://github.com/freifunkh/ffh-packages
+
+##	PACKAGES_HANNOVER_REPO
+#		the  git repository from where to clone the package feed
+PACKAGES_HANNOVER_REPO=https://github.com/freifunkh/ffh-packages.git
+
+##	PACKAGES_HANNOVER_COMMIT
+#		the version/commit of the git repository to clone
 PACKAGES_HANNOVER_COMMIT=f37410b72d9e6a9f3edce90656871d2ea4fe521d
 
+##  PACKAGES_HANNOVER_BRANCH
+#   the branch to check out
+PACKAGES_HANNOVER_BRANCH=master
+
+##	PACKAGES_FFHO_REPO
+#		the  git repository from where to clone the package feed
 PACKAGES_FFHO_REPO=https://git.ffho.net/FreifunkHochstift/ffho-packages.git
-PACKAGES_FFHO_BRANCH=master
+
+##	PACKAGES_FFHO_COMMIT
+#		the version/commit of the git repository to clone
 PACKAGES_FFHO_COMMIT=a2521ef8cd6774a0470a7b2568d0240e679e95e7
+
+##  PACKAGES_FFHO_BRANCH
+#   the branch to check out
+PACKAGES_FFHO_BRANCH=master
