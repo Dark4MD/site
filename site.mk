@@ -17,6 +17,7 @@ GLUON_FEATURES := \
 	respondd \
 	setup-mode \
 	status-page \
+	wireless-encryption-wpa3 \
 	web-advanced \
 	web-private-wifi \
 	web-wizard
@@ -137,6 +138,18 @@ GLUON_SITE_PACKAGES += \
 	$(USB_PACKAGES_STORAGE) \
 	$(USB_PACKAGES_NET) \
 	$(TOOLS_PACKAGES)
+endif
+
+ifeq ($(GLUON_TARGET),ath79-tiny)
+GLUON_SITE_PACKAGES += \
+	-gluon-mesh-vpn-fastd \
+	-gluon-mesh-vpn-core \
+	-gluon-config-mode-mesh-vpn \
+	-gluon-web-autoupdater \
+	-gluon-web-mesh-vpn-fastd \
+	hostapd-mini \
+	-hostapd-openssl \
+	-gluon-wireless-encryption
 endif
 
 ifeq ($(GLUON_DEBUG),1)
