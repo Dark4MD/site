@@ -5,21 +5,22 @@
 
 GLUON_FEATURES := \
 	autoupdater \
-	config-mode-domain-select \
-	config-mode-geo-location-osm \
 	ebtables-filter-multicast \
 	ebtables-filter-ra-dhcp \
 	ebtables-limit-arp \
 	mesh-batman-adv-15 \
-	mesh-vpn-fastd \
 	radv-filterd \
-	radvd \
-	respondd \
-	setup-mode \
-	status-page \
-	wireless-encryption-wpa3 \
+	respondd
+
+GLUON_FEATURES_standard := \
+	config-mode-domain-select \
+	mesh-vpn-fastd \
 	web-advanced \
 	web-private-wifi \
+	setup-mode \
+	wireless-encryption-wpa3 \
+	status-page \
+	config-mode-geo-location-osm \
 	web-wizard
 
 ##	GLUON_SITE_PACKAGES
@@ -31,17 +32,15 @@ GLUON_FEATURES := \
 ##	When removing ffho-web-autoupdater, remember to readd gluon-web-autoupdater again
 
 GLUON_SITE_PACKAGES := \
-	gluon-web-autoupdater \
-	haveged \
-	iwinfo \
 	gluon-segment-mover \
 	ecdsautils \
 	respondd-module-airtime \
 	ffh-cli-scripts
 
-
 GLUON_SITE_PACKAGES_standard := \
+	iwinfo \
 	iperf3
+
 
 ##	GLUON_MULTIDOMAIN
 #		Build gluon with multidomain support.
@@ -138,18 +137,6 @@ GLUON_SITE_PACKAGES += \
 	$(USB_PACKAGES_STORAGE) \
 	$(USB_PACKAGES_NET) \
 	$(TOOLS_PACKAGES)
-endif
-
-ifeq ($(GLUON_TARGET),ath79-tiny)
-GLUON_SITE_PACKAGES += \
-	-gluon-mesh-vpn-fastd \
-	-gluon-mesh-vpn-core \
-	-gluon-config-mode-mesh-vpn \
-	-gluon-web-autoupdater \
-	-gluon-web-mesh-vpn-fastd \
-	hostapd-mini \
-	-hostapd-openssl \
-	-gluon-wireless-encryption
 endif
 
 ifeq ($(GLUON_DEBUG),1)
