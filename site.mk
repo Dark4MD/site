@@ -18,6 +18,7 @@ GLUON_FEATURES := \
 	respondd \
 	setup-mode \
 	status-page \
+	wireless-encryption-wpa3 \
 	web-advanced \
 	web-private-wifi \
 	web-wizard
@@ -38,6 +39,9 @@ GLUON_SITE_PACKAGES := \
 	ecdsautils \
 	respondd-module-airtime \
 	ffh-cli-scripts
+
+GLUON_SITE_PACKAGES_standard := \
+	iperf3
 
 ##	GLUON_MULTIDOMAIN
 #		Build gluon with multidomain support.
@@ -136,6 +140,18 @@ GLUON_SITE_PACKAGES += \
 	$(TOOLS_PACKAGES)
 endif
 
+ifeq ($(GLUON_TARGET),ath79-tiny)
+GLUON_SITE_PACKAGES += \
+	-gluon-mesh-vpn-fastd \
+	-gluon-mesh-vpn-core \
+	-gluon-config-mode-mesh-vpn \
+	-gluon-web-autoupdater \
+	-gluon-web-mesh-vpn-fastd \
+	hostapd-mini \
+	-hostapd-openssl \
+	-gluon-wireless-encryption
+endif
+
 ifeq ($(GLUON_DEBUG),1)
 GLUON_SITE_PACKAGES += \
 	valgrind \
@@ -175,5 +191,6 @@ GLUON_LANGS ?= de en fr
 GLUON_DEPRECATED ?= upgrade
 
 # Set default branch for building custom images
-GLUON_AUTOUPDATER_BRANCH ?= wireguard
+GLUON_AUTOUPDATER_BRANCH ?= develop-wg
+
 GLUON_AUTOUPDATER_ENABLED ?= 1
