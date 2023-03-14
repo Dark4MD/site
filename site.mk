@@ -18,7 +18,6 @@ GLUON_FEATURES := \
 	respondd \
 	setup-mode \
 	status-page \
-	wireless-encryption-wpa3 \
 	web-advanced \
 	web-private-wifi \
 	web-wizard
@@ -39,9 +38,6 @@ GLUON_SITE_PACKAGES := \
 	ecdsautils \
 	respondd-module-airtime \
 	ffh-cli-scripts
-
-GLUON_SITE_PACKAGES_standard := \
-	iperf3
 
 ##	GLUON_MULTIDOMAIN
 #		Build gluon with multidomain support.
