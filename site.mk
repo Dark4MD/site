@@ -184,7 +184,7 @@ GLUON_REGION ?= eu
 GLUON_LANGS ?= de en fr
 
 # Do not build images for deprecated devices
-GLUON_DEPRECATED ?= 0
+GLUON_DEPRECATED ?= upgrade
 
 # Set default branch for building custom images
 GLUON_AUTOUPDATER_BRANCH ?= develop-wg
