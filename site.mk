@@ -35,6 +35,7 @@ GLUON_SITE_PACKAGES := \
 	haveged \
 	iwinfo \
 	gluon-segment-mover \
+	gluon-web-cellular \
 	ecdsautils \
 	respondd-module-airtime \
 	ffh-cli-scripts
