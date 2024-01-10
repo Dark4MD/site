@@ -171,6 +171,9 @@ end
 
 -- devices without usb ports
 if device({
+    'avm-fritz-box-7312',
+    'arcor-802',
+    'arcor-803',
     'avm-fritz-box-7412',
     'gl.inet-microuter-n300',
     'netgear-ex3700',
