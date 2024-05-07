@@ -181,6 +181,7 @@ if device({
     'netgear-r6020',
     'ubiquiti-edgerouter-x-sfp',
     'ubiquiti-edgerouter-x',
+    'ubiquiti-usw-flex'
     'ubiquiti-unifi-6-lr-v1',
     'zyxel-nwa55axe',
 }) then
