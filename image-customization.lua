@@ -179,6 +179,7 @@ if device({
     'netgear-ex3700',
     'netgear-ex6150',
     'netgear-r6020',
+	'tp-link-re305'
     'ubiquiti-edgerouter-x-sfp',
     'ubiquiti-edgerouter-x',
     'ubiquiti-usw-flex'
