@@ -179,14 +179,14 @@ if device({
     'netgear-ex3700',
     'netgear-ex6150',
     'netgear-r6020',
-	'tp-link-re305'
+    'tp-link-re305'
     'ubiquiti-edgerouter-x-sfp',
     'ubiquiti-edgerouter-x',
     'ubiquiti-usw-flex'
-	'ubiquiti-unifi-6-lite',
-	'ubiquiti-unifi-6-lr-v1',
-	'ubiquiti-unifi-6-lr-v2',	
-	'ubiquiti-unifi-6-lr-v3',
+    'ubiquiti-unifi-6-lite',
+    'ubiquiti-unifi-6-lr-v1',
+    'ubiquiti-unifi-6-lr-v2',	
+    'ubiquiti-unifi-6-lr-v3',
     'zyxel-nwa55axe',
 }) then
     include_usb = false
