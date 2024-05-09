@@ -185,7 +185,7 @@ if device({
     'ubiquiti-usw-flex'
     'ubiquiti-unifi-6-lite',
     'ubiquiti-unifi-6-lr-v1',
-    'ubiquiti-unifi-6-lr-v2',	
+    'ubiquiti-unifi-6-lr-v2',
     'ubiquiti-unifi-6-lr-v3',
     'zyxel-nwa55axe',
 }) then
