@@ -3,38 +3,38 @@ packages{
     'ff-web-ap-timer',
     'ffac-autoupdater-wifi-fallback',
     'ffac-change-autoupdater',
-	'haveged',
-	'iwinfo',
-	'gluon-segment-mover',
-	'ecdsautils',
-	'respondd-module-airtime',
-	'ffh-cli-scripts',
+    'haveged',
+    'iwinfo',
+    'gluon-segment-mover',
+    'ecdsautils',
+    'respondd-module-airtime',
+    'ffh-cli-scripts',
 }
 
 features {
-	'autoupdater',
-	'authorized-keys',
-	'config-mode-domain-select',
-	'config-mode-geo-location-osm',
-	'ebtables-filter-multicast',
-	'ebtables-filter-ra-dhcp',
-	'ebtables-limit-arp',
-	'mesh-batman-adv-15',
-	'mesh-vpn-wireguard',
-	'radv-filterd',
-	'radvd',
-	'respondd',
-	'setup-mode',
-	'status-page',
-	'web-advanced',
-	'web-private-wifi',
-	'web-wizard',
+    'autoupdater',
+    'authorized-keys',
+    'config-mode-domain-select',
+    'config-mode-geo-location-osm',
+    'ebtables-filter-multicast',
+    'ebtables-filter-ra-dhcp',
+    'ebtables-limit-arp',
+    'mesh-batman-adv-15',
+    'mesh-vpn-wireguard',
+    'radv-filterd',
+    'radvd',
+    'respondd',
+    'setup-mode',
+    'status-page',
+    'web-advanced',
+    'web-private-wifi',
+    'web-wizard',
 }
 
 pkgs_usb = {
     'usbutils',
-	'kmod-usb-core',
-	'kmod-usb2',
+    'kmod-usb-core',
+    'kmod-usb2',
 }
 
 pkgs_hid = {
@@ -70,47 +70,47 @@ pkgs_usb_storage = {
 }
 
 pkgs_tools = {
-	'bash',
-	'tcpdump',
-	'vnstat',
-	'iperf',
-	'iperf3',
-	'socat',
-	'usbutils',
+    'bash',
+    'tcpdump',
+    'vnstat',
+    'iperf',
+    'iperf3',
+    'socat',
+    'usbutils',
 }
 
 pkgs_usb_net = {
     'kmod-mii',
-	'kmod-nls-base',
+    'kmod-nls-base',
     'kmod-usb-net',
     'kmod-usb-net-asix',
     'kmod-usb-net-asix-ax88179',
     'kmod-usb-net-cdc-eem',
     'kmod-usb-net-cdc-ether',
-	'kmod-usb-net-cdc-mbim',
-	'kmod-usb-net-cdc-ncm',
+    'kmod-usb-net-cdc-mbim',
+    'kmod-usb-net-cdc-ncm',
     'kmod-usb-net-cdc-subset',
     'kmod-usb-net-dm9601-ether',
     'kmod-usb-net-hso',
-	'kmod-usb-net-huawei-cdc-ncm',
+    'kmod-usb-net-huawei-cdc-ncm',
     'kmod-usb-net-ipheth',
-	'kmod-usb-net-kalmia',
-	'kmod-usb-net-kaweth',
+    'kmod-usb-net-kalmia',
+    'kmod-usb-net-kaweth',
     'kmod-usb-net-mcs7830',
     'kmod-usb-net-pegasus',
-	'kmod-usb-net-qmi-wwan',
+    'kmod-usb-net-qmi-wwan',
     'kmod-usb-net-rndis',
-	'kmod-usb-net-rtl8150',
+    'kmod-usb-net-rtl8150',
     'kmod-usb-net-rtl8152',
-	'kmod-usb-net-sierrawireless',
+    'kmod-usb-net-sierrawireless',
     'kmod-usb-net-smsc95xx',
 }
 
 pkgs_pci_net = {
-	'kmod-sky2',
-	'kmod-r8169',
-	'kmod-forcedeth',
-	'kmod-8139too',
+    'kmod-sky2',
+    'kmod-r8169',
+    'kmod-forcedeth',
+    'kmod-8139too',
 }
 
 pkgs_pci = {
@@ -120,7 +120,7 @@ pkgs_pci = {
 
 if not device_class('tiny') then
 	features {
-		'wireless-encryption-wpa3'
+	    'wireless-encryption-wpa3'
 	}
 end
 	
