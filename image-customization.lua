@@ -192,6 +192,14 @@ if device({
     include_usb = false
 end
 
+if device({
+    'tp-link-re305',
+}) then
+    features {
+        '-web-private-wifi',
+}
+end
+
 if include_usb then
     packages(pkgs_usb)
     packages(pkgs_usb_net)
