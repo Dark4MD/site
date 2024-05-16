@@ -169,6 +169,12 @@ if device({
     include_usb = false
 end
 
+if device({
+    'ubiquiti-usw-flex',
+}) then
+    packages {'poemgr'}
+end
+
 -- devices without usb ports
 if device({
     'avm-fritz-box-7312',
