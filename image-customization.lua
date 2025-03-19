@@ -169,6 +169,11 @@ if device({
     include_usb = false
 end
 
+if target('lantiq', 'xway')
+then
+    include_usb = false
+end
+
 if device({
     'ubiquiti-usw-flex',
 }) then
