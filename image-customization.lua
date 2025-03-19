@@ -165,6 +165,8 @@ if device({
     'gl-mt300n-v2',
     'tp-link-td-w8970',
     'tp-link-td-w8980',
+    'arcor-802',
+    'arcor-803',
 }) then
     include_usb = false
 end
@@ -205,6 +207,8 @@ end
 
 if device({
     'tp-link-re305',
+	'arcor-802',
+    'arcor-803',
 }) then
     features {
         '-web-private-wifi',
