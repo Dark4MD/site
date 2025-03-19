@@ -118,7 +118,7 @@ pkgs_pci = {
     'kmod-bnx2', -- Broadcom NetExtreme BCM5706/5708/5709/5716
 }
 
-if not device_class('tiny') then
+if not device_class('tiny') and not target('lantiq', 'xway') then
 	features {
 	    'wireless-encryption-wpa3'
 	}
