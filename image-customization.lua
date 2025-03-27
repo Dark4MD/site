@@ -117,12 +117,6 @@ pkgs_pci = {
     'pciutils',
     'kmod-bnx2', -- Broadcom NetExtreme BCM5706/5708/5709/5716
 }
-
-if not device_class('tiny') and not target('lantiq', 'xway') then
-	features {
-	    'wireless-encryption-wpa3'
-	}
-end
 	
 if device({
         'zte,mf281',
@@ -137,7 +131,7 @@ if device({
 }
 end
 
-include_usb = true
+include_usb = false
 
 -- rtl838x has no USB support as of Gluon v2023.2
 if target('realtek', 'rtl838x') then
